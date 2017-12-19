@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<addonManifest xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xmlns="http://schemas.apprenda.com/AddonManifest"
+               xsi:schemaLocation="http://schemas.apprenda.com/AddonManifest https://apprenda.com/schemas/platform/6.5/AddonManifest.xsd"
+               name="Amazon CloudWatch"
+               description="Add-On that enables developers to forward logs to CloudWatch"
+               deploymentNotes=""
+               developerHelp="Learn more about CloudWatch at https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/GettingStarted.html"
+               vendor="Apprenda"
+               author="Michael Michael"
+               version="1.0"
+               provisioningUsername="Enter your AWS Access Key here"
+               provisioningPassword=""
+               manifestVersion="2">
+ <!--Documentation
+ Add-On documentation: http://docs.apprenda.com/current/addons 
+ Add-On creation tutorial: http://docs.apprenda.com/6-5/addoncreation -->
+  <!--Properties allows you to configure the back-end properties of the Add-On. These are not shown to the developer but rather are used during the
+  provisioning process.-->
+  <properties>
+      <property key="AWSRegion" displayName="Amazon Web Services Region" description="Please specify the AWS region endpoint for CloudWatch (i.e. us-east-1, us-west-1, etc)" value="us-east-1"/>
+  </properties>
+
+  <!--Parameters allows you to expose certain parameters for the developer to configure. As the developer of the Add-On, you have access
+  to the information provided and can use it in your provisioning/test logic.-->
+  <parameters allowUserDefinedParameters="false">
+    <!--    
+    <parameter key="RequiredParameter" displayName="Required Parameter" isRequired="true" isEncrypted="false" description="A parameter that is required" />
+    <parameter key="EncryptedParameter" displayName="Encrypted Parameter" isRequired="false" isEncrypted="true" description="A parameter that is encrypted when stored in the DeployedAddOnParameters table" />
+    <parameter key="OptionalParameter" displayName="Optional Parameter" isRequired="false" isEncrypted="false" description="A parameter that is optional" />
+    <parameter key="DefaultValueParameter" displayName="Parameter w/ Default Value" isRequired="false" isEncrypted="false" defaultValue="default" description="A parameter that has a default value" />
+    -->
+  </parameters>
+</addonManifest>

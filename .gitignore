@@ -1,0 +1,8 @@
+**/bin/*
+**/packages/*
+**/debug/*
+**/obj/*
+**/.vs/*
+**/Apprenda Items/*
+**/*.csproj.user
+**/Archive.zip
