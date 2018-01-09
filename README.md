@@ -8,6 +8,9 @@ This repository will walk you through the steps to set up this integration as we
 - LogForwarderExtension WCF Service, An Apprenda WCF service that is built as an extension. It receives all the logs from Apprenda and forwards them to CloudWatch
 - TestingLoggingExtension_WCF_Call.ps1, a PowerShell utility to invoke the Test Interface of the LogAggregator and get some useful statistics on the queue that is pushing the log messages to CloudWatch
 
+## Architecture Diagram
+![Apprenda to CloudWatch](Images/ArchitectureDiagram.jpg?raw=true)
+
 ## Integration Steps, Setting up CloudWatch
 - First, go ahead and create a CloudWatch account
 - CloudWatch will provide you with a Key, a Secret, and the AWS Region where your logs will be forwarded. You will need those values when you configure the Add-On.
